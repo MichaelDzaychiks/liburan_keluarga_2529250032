@@ -55,7 +55,7 @@ class MainApp extends StatelessWidget {
               const SizedBox(height: 24),
               Container(
                 width: double.infinity,
-                color: const Color.fromARGB(255, 113, 192, 119),
+                // color: const Color.fromARGB(255, 113, 192, 119),
                 padding: const EdgeInsets.all(16),
                 child: const Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -68,6 +68,45 @@ class MainApp extends StatelessWidget {
                       ),
                     ),
                     SizedBox(height: 18),
+                    Row(
+                      children: [
+                        Icon(Icons.location_on,color: Colors.green),
+                        SizedBox(width: 12),
+                        Text('Lokasi'),
+                        Spacer(),
+                        Text(
+                          'Bangungan, Semarang',
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                          )
+                        ),
+                      ],
+                    ),
+                    Divider(height: 28),
+                    Row(
+                      children: [
+                        Icon(Icons.access_time,color:Colors.green),
+                        SizedBox(width: 12),
+                        Text('Jam Buka'),
+                        Spacer(),
+                        Text(
+                          '08.00-17.00',
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                          ),
+                        )
+                      ],
+                    ),
+                    Divider(height: 28),
+                    Row(
+                      children: [
+                        Icon(Icons.confirmation_num),
+                        SizedBox(width: 12),
+                        Text(
+                          'Harga Tiket'
+                        )
+                      ],
+                    )
                   ],
                 ),
               )
